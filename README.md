@@ -63,7 +63,7 @@ Depending on your choice of parameters, after the script execution has completed
 
 # Filestructure
 ```
-blog-AzureAutomation-2022-04
+Article-2022-04-AzureAutomation-The-Basics
 │   LICENSE
 │   README.md
 │
