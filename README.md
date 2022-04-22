@@ -1,5 +1,5 @@
-# Introduction
-[![GitHub](https://img.shields.io/github/license/AabyeHald/blog-AzureAutomation-2022-04?style=plastic)](https://github.com/AabyeHald/blog-AzureAutomation-2022-04/blob/0e8b39f8632fd91a2badc84e1d2b1e42078fb138/LICENSE)
+# Azure Automation - The Basics (Lab/demo environment)
+[![GitHub](https://img.shields.io/github/license/AabyeHald/Article-2022-04-AzureAutomation-The-Basics?style=plastic)](https://github.com/AabyeHald/Article-2022-04-AzureAutomation-The-Basics/blob/main/LICENSE)
 
 This is a very simple automation platform, based on Azure Automation and Log-Analytics. This type of platform is in my mind central for operating Azure at any kind of scale - hence it is essential to fully understand what it can do, which in engineering terms means kicking some tires and getting the hands dirty.
 
