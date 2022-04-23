@@ -32,7 +32,6 @@ Assuming you are in the ```src``` folder and that you have a connected terminal 
 
 ```
 $DeploymentParameters = @{
-    TemplatePath = $TemplatePath
     SubscriptionId = "cc367ab3-523d-46b2-806a-1267b35bd7ca"
     Region = "westeurope"
 
@@ -56,7 +55,7 @@ $DeploymentParameters = @{
     Verbose = $true
 }
 
-.\Deploy-All.ps1
+.\src\Deploy-All.ps1 @DeploymentParameters
 ```
 
 Depending on your choice of parameters, after the script execution has completed, you will end up with 4 Resource Groups in the targeted subscription.
