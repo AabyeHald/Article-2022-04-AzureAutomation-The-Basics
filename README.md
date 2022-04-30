@@ -3,7 +3,7 @@
 
 This is a very simple automation platform, based on Azure Automation and Log-Analytics. This type of platform is in my mind central for operating Azure at any kind of scale - hence it is essential to fully understand what it can do, which in engineering terms means kicking some tires and getting the hands dirty.
 
-This repository is accompanied by the article: [Link to follow later, when the Article is ready]
+This repository is accompanied by the article: [Azure Automation - The Basics](https://blog.aabyehald.com/article/Azure-Automation-The-Basics/)
 
 In this README, it is enough to state that the deployed platform contains the following components:
 
@@ -14,6 +14,7 @@ In this README, it is enough to state that the deployed platform contains the fo
 **Workers**
 - Virtual Network
 - One or more Hybrid Workers, based on Windows Server 2019
+- MMA agent extensions are used instead of AMA agent extensions, as the AMA agents does not yet (at this time) support VMInsights.
 
 ## Prerequisites
 I assume that the normal use of this repository will be from a client, where the repository has either been downloaded or even better, cloned.<br>
@@ -55,7 +56,7 @@ $DeploymentParameters = @{
     Verbose = $true
 }
 
-.\src\Deploy-All.ps1 @DeploymentParameters
+.\Deploy-All.ps1 @DeploymentParameters
 ```
 
 Depending on your choice of parameters, after the script execution has completed, you will end up with 4 Resource Groups in the targeted subscription.
@@ -66,19 +67,19 @@ Article-2022-04-AzureAutomation-The-Basics
 │   LICENSE
 │   README.md
 │
-└───src
-    │   Deploy-All.ps1
+└───src                                         # Sourcecode folder
+    │   Deploy-All.ps1                          # Deploy all script, that uses the other deployment scripts for deployment
     │
-    ├───scripts
-    │       Deploy-AutomationPlatform.ps1
-    │       Deploy-Workers.ps1
+    ├───scripts                                 # Deployment scripts
+    │       Deploy-AutomationPlatform.ps1       # Deployment script for the Azure based Automation Platform
+    │       Deploy-Workers.ps1                  # Deployment script for the Hybrid Workers
     │
-    └───templates
-        ├───AutomationPlatform
+    └───templates                               # ARM template folder
+        ├───AutomationPlatform                  # ARM templates for the Azure based Automation Platform
         │       AutomationAccount.json
         │       LogAnalyticsWorkspace.json
         │
-        └───Workers
+        └───Workers                             # ARM templates for the Hybrid Workers
                 VirtualMachine-Windows.json
                 VirtualNetwork.json
 ```
