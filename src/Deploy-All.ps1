@@ -17,7 +17,6 @@
     The workers are installed with the MMA and Dependency agents as one would do with normal Azure based VMs.
 .EXAMPLE
     $DeploymentParameters = @{
-        TemplatePath = $TemplatePath
         SubscriptionId = "cc367ab3-523d-46b2-806a-1267b35bd7ca"
         Region = "westeurope"
 
