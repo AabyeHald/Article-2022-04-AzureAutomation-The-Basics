@@ -21,6 +21,8 @@
     The address space of the virtual network (CIDR Prefix)
 .PARAMETER WorkerSubnetPrexix
     The address space for the workers subnet (CIDR Prefix)
+.PARAMETER WorkerSubnetName
+    The workers subnet name
 .PARAMETER ResourceGroupNameWorker
     The Resource Group name for the workers
 .PARAMETER WorkerCount

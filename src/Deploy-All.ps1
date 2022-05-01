@@ -15,6 +15,37 @@
     1. Vnet
     2. Windows 2019 servers as workers.
     The workers are installed with the MMA and Dependency agents as one would do with normal Azure based VMs.
+.PARAMETER SubscriptionId
+    The ID of the target Subscription
+.PARAMETER Region
+    The name of the target Region
+.PARAMETER ResourceGroupNameAutomationAccount
+    The Resource Group name for the Automation Account
+.PARAMETER AutomationAccountName
+    The name of the Automation 
+.PARAMETER ResourceGroupNameLogAnalyticsWorkspace
+    The Resource Group name for the Log Analytics Workspace
+.PARAMETER LogAnalyticsWorkspaceName
+    The name of the Log Analytics Workspace
+.PARAMETER ResourceGroupNameVirtualNetwork
+    The Resource Group name for the Virtual Network containing the workers
+.PARAMETER LinkWorkspace
+    Should we link the Workspace (Log-Analytics and Automation Account)
+.PARAMETER ResourceGroupNameVirtualNetwork
+    The Resource Group name for the Virtual Network containing the workers
+.PARAMETER VirtualNetworkName
+    The name of the Virtual Network
+.PARAMETER VirtualNetworkPrefix
+    The address space of the virtual network (CIDR Prefix)
+.PARAMETER WorkerSubnetPrexix
+    The address space for the workers subnet (CIDR Prefix)
+.PARAMETER ResourceGroupNameWorker
+    The Resource Group name for the workers
+.PARAMETER WorkerCount
+    The number of workers to deploy
+.PARAMETER WorkerName
+    The Virtual Machine (Worker) name, without the -001 postfix
+
 .EXAMPLE
     $DeploymentParameters = @{
         SubscriptionId = "cc367ab3-523d-46b2-806a-1267b35bd7ca"
