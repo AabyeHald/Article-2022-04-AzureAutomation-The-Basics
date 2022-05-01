@@ -45,7 +45,6 @@
     The number of workers to deploy
 .PARAMETER WorkerName
     The Virtual Machine (Worker) name, without the -001 postfix
-
 .EXAMPLE
     $DeploymentParameters = @{
         SubscriptionId = "cc367ab3-523d-46b2-806a-1267b35bd7ca"
