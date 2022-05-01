@@ -40,7 +40,7 @@
         Verbose = $true
     }
 
-    .\src\Deploy-All.ps1
+    .\src\Deploy-All.ps1 @DeploymentParameters
 
     VERBOSE: Deploy-AutomationPlatform.ps1          - 2022-04-22T15:28:02.9613721Z - Initializing Automation Platform deployment
     VERBOSE: Deploy-AutomationPlatform.ps1          - 2022-04-22T15:28:02.9710458Z - Setting context: cc367ab3-523d-46b2-806a-1267b35bd7ca
